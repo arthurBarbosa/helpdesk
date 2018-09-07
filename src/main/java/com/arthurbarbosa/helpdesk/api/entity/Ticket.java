@@ -21,7 +21,7 @@ public class Ticket {
 
 	private Date date;
 
-	private String titulo;
+	private String title;
 
 	private Integer number;
 
@@ -62,12 +62,12 @@ public class Ticket {
 		this.date = date;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getTitle() {
+		return title;
 	}
-
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public Integer getNumber() {
