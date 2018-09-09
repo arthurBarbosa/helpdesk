@@ -25,7 +25,7 @@ import com.arthurbarbosa.helpdesk.api.service.UserService;
 import com.mongodb.DuplicateKeyException;
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/api/users")
 @CrossOrigin(origins = "*")
 public class UserController {
 
@@ -50,7 +50,7 @@ public class UserController {
 			User userPersisted = userService.createOrUpdate(user);
 			response.setData(userPersisted);
 		} catch (DuplicateKeyException dE) {
-			response.getErrors().add("Email já res]gistrado");
+			response.getErrors().add("Email já resgistrado");
 			return ResponseEntity.badRequest().body(response);
 		} catch (Exception e) {
 			response.getErrors().add(e.getMessage());
