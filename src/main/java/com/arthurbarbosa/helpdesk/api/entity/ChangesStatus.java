@@ -18,7 +18,7 @@ public class ChangesStatus {
 	private Ticket ticket;
 
 	@DBRef
-	private User user;
+	private User userChange;
 
 	private Date dateChangeStatus;
 
@@ -40,12 +40,14 @@ public class ChangesStatus {
 		this.ticket = ticket;
 	}
 
-	public User getUser() {
-		return user;
+	
+
+	public User getUserChange() {
+		return userChange;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setUserChange(User userChange) {
+		this.userChange = userChange;
 	}
 
 	public Date getDateChangeStatus() {

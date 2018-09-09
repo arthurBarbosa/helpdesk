@@ -72,7 +72,7 @@ public class TicketServiceImpl implements TicketService {
 	}
 
 	@Override
-	public Page<Ticket> findByParametesByAndCurrentUser(int page, int count, String title, String status,
+	public Page<Ticket> findByParametersByAndCurrentUser(int page, int count, String title, String status,
 			String priority, String userId) {
 		Pageable pages = new PageRequest(page, count);
 		return this.ticketRepository
